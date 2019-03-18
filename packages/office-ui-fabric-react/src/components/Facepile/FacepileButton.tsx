@@ -5,10 +5,6 @@ import { getStyles } from './FacepileButton.styles';
 
 @customizable('FacepileButton', ['theme', 'styles'], true)
 export class FacepileButton extends BaseComponent<IButtonProps, {}> {
-  /**
-   * Tell BaseComponent to bypass resolution of componentRef.
-   */
-  protected _skipComponentRefResolution = true;
 
   public render(): JSX.Element {
     const { className, styles, ...rest } = this.props;

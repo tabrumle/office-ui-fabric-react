@@ -128,6 +128,11 @@ export interface IFacepilePersona extends React.ButtonHTMLAttributes<HTMLButtonE
    * Optional keytip for this button that is only added when 'onClick' is defined for the persona
    */
   keytipProps?: IKeytipProps;
+
+  /**
+   * Optional button properties to be passed to the FacepileButton associated with this persona
+   */
+  buttonProps?: IButtonProps
 }
 
 export enum OverflowButtonType {

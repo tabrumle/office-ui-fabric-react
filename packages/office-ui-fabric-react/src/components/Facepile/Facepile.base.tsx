@@ -158,10 +158,11 @@ export class FacepileBase extends BaseComponent<IFacepileProps, {}> {
   private _getElementProps(
     persona: IFacepilePersona,
     index: number
-  ): { key: React.Key; ['data-is-focusable']: boolean } & React.HTMLAttributes<HTMLDivElement> {
+  ): { key: React.Key; ['data-is-focusable']: boolean } & React.HTMLAttributes<HTMLDivElement> & IButtonProps {
     const { _classNames } = this;
 
     return {
+      ...persona.buttonProps,
       key: (!!persona.imageUrl ? 'i' : '') + index,
       'data-is-focusable': true,
       role: 'option',

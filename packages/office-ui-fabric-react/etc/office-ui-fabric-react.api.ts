@@ -7858,6 +7858,7 @@ interface IFacepile {
 // @public (undocumented)
 interface IFacepilePersona extends React.ButtonHTMLAttributes<HTMLButtonElement | HTMLDivElement> {
   allowPhoneInitials?: boolean;
+  buttonProps?: IButtonProps;
   data?: any;
   imageInitials?: string;
   imageUrl?: string;
